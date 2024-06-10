@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+    function show() {
+      var myform = document.frm;
+      var select = myform.lngnames;
+      alert("you selected "+ select.value);
+    }
+  </script>
+  <body>
+    <form name="frm">
+     select you favorite language:
+     <select  id="lngnames" onchange="show()">
+        <option >c</option>
+        <option >option>c++</option>
+        <option >java</option>
+        <option >php</option>
+        <option >React-js</option>
+     </select>
+    </form>
+  </body>
+</html>

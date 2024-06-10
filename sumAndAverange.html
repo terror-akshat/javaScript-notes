@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function average() {
+        var sum = 0;
+        var avg;
+        for (var i = 0; i < arguments.length; i++) sum += arguments[i];
+        document.write("sum is " + sum + "<br>");
+        document.write("avg is" + sum / arguments.length + "<br>");
+        console.log(arguments.length);
+      }
+
+      average(10, 20, "30");
+    </script>
+  </head>
+  <body></body>
+</html>

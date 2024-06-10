@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function process(elem,clr) {
+        // alert(elem.value);
+        elem.style.background=clr;
+      }
+      
+    </script>
+  </head>
+  <body>
+    <form name="frm">
+      <table >
+        <!-- <tr>
+          <td>Login :</td>
+          <td><input type="text"  onblur="process(this)" /></td>
+        </tr> -->
+        <tr>
+          <td>Login :</td>
+          <td><input type="text"  onfocus="process(this, 'green')" /></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

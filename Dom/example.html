@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+    function show() {
+      var allus;
+      allus = document.getElementsByClassName("highlight");
+      alert(allus.length);
+      for (i = 0; i < allus.length; i++) {
+        allus[i].style.backgroundColor = "green";
+      }
+    }
+  </script>
+  <body>
+    <ul class="highlight">
+      <li>heell</li>
+      <li>heell</li>
+      <li>heell</li>
+      <li>heell</li>
+      <li>heell</li>
+    </ul>
+    <ul class="highlight">
+      <li>heell</li>
+      <li>heell</li>
+      <li>heell</li>
+      <li>heell</li>
+      <li>heell</li>
+    </ul>
+    <ul class="highlight">
+      <li>heell</li>
+      <li>heell</li>
+      <li>heell</li>
+      <li>heell</li>
+      <li>heell</li>
+    </ul>
+    <input type="button" onclick="show()" />
+  </body>
+</html>

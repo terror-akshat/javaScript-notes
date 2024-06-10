@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+    function show() {
+      var all_list;
+      all_list = document.getElementsByTagName("li");
+      alert(all_list.length);
+      alert(all_list[2].innerHtml);
+    }
+    show();
+  </script>
+  <body>
+    <ul id="nav">
+      <li>hello</li>
+      <li>hello</li>
+      <li>hello</li>
+      <li>hello</li>
+      <li>hello</li>
+    </ul>
+    <button onclick="show()"></button>
+  </body>
+</html>

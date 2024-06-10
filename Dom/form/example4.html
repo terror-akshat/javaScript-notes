@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+    function show() {
+      var myform = document.frm;
+      //   var allenlem = myform.elements;
+      //   alert("Login id: " + allenlem[0].value);
+      //   alert("password: " + allenlem[1].value);
+      alert("Login id: " + myform.txtuser.value);
+      alert("password: " + myform.txtped.value);
+    }
+  </script>
+  <body>
+    <form name="frm">
+      <table>
+        <tr>
+          <td>Login id:</td>
+          <td><input name="txtuser" id="userId" type="text" /></td>
+        </tr>
+        <tr>
+          <td>password:</td>
+          <td><input name="txtped" id="userpass" type="password" /></td>
+        </tr>
+        <tr>
+          <td><input type="button" onclick="show()" value="Login" /></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

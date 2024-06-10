@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      var n = parseInt(prompt("enter the number"));
+      var primes = [];
+      for (var i = 2; i < n; i++) {
+        for (var j = 2; j < i; j++) {
+          if (i % j == 0) break;
+        }
+        if (i == j) {
+          primes[priems.length] = i;
+        }
+      }
+      for (var i = 0; i < primes.length; i++) {
+        document.write(priems[i] + "<br>");
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

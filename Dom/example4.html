@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+    function show() {
+      var myspan;
+      myspan = document.getElementById("sp1");
+      var now = new Date();
+      myspan.innerHTML = now.toDateString();
+      //   var str = myspan.firstChild.nodeValue;
+      //   alert(str);
+    }
+    // function change() {
+    //   var myspan;
+    //   myspan = document.getElementById("sp1");
+    //   myspan.firstChild.nodeValue = "now the text has chaned";
+    // }
+  </script>
+  <body>
+    <div id="sp1">date</div>
+    <input type="button" onclick="show()" />
+    <!-- <input type="button" id="sp1" onclick="change()" /> -->
+  </body>
+</html>
